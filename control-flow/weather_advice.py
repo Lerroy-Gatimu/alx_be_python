@@ -1,11 +1,10 @@
 question = input("What's the weather like today? (sunny/rainy/cold): ").strip().lower()
 
-match question:
-  case "sunny":
+if question == "sunny":
     print("Wear a t-shirt and sunglasses.")
-  case "rainy":
+elif question == "rainy":
     print("Don't forget your umbrella and a raincoat.")  
-  case "cold":
+elif question =="cold":
     print("Make sure to wear a warm coat and a scarf.")  
-  case _:
+else:    
     print("Sorry, I don't have recommendations for this weather.")  
