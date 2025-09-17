@@ -21,5 +21,4 @@ if time_bound == "yes":
     reminder += " This is time-sensitive and requires immediate attention today!"
 
 # Provide a Customized Reminder
-print("\n--- Daily Reminder ---")
-print(reminder)
+print(f"Reminder: {reminder}")
