@@ -1,12 +1,12 @@
 # daily_reminder.py
 
 # Prompt for a Single Task
-task = input("Enter your task for today: ")
-priority = input("Enter the priority level (high, medium, low): ").lower()
-time_bound = input("Is this task time-bound? (yes/no): ").lower()
+task = input("Enter your task: ")
+time_bound = input("Is it time-bound? (yes/no): ")
+priority = input("Priority (high/medium/low): ")
 
 # Process the Task Based on Priority and Time Sensitivity
-match priority:
+match priority.lower():
     case "high":
         reminder = f"Your task '{task}' is HIGH priority."
     case "medium":
@@ -17,7 +17,7 @@ match priority:
         reminder = f"Your task '{task}' has an UNKNOWN priority."
 
 # Check if task is time-sensitive
-if time_bound == "yes":
+if time_bound.lower() == "yes":
     reminder += " This is time-sensitive and requires immediate attention today!"
 
 # Provide a Customized Reminder
