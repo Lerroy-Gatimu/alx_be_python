@@ -16,13 +16,14 @@ class TestSimpleCalculator(unittest.TestCase):
         self.assertEqual(self.calc.add(0, 5), 5)
         self.assertEqual(self.calc.add(5, 0), 5)
 
-    def test_subtract(self):
+    def test_subtraction(self):
         """Test the subtraction method."""
         self.assertEqual(self.calc.subtract(5, 3), 2)
         self.assertEqual(self.calc.subtract(-5, -3), -2)
         self.assertEqual(self.calc.subtract(5, -3), 8)
         self.assertEqual(self.calc.subtract(-5, 3), -8)
         self.assertEqual(self.calc.subtract(0, 5), -5)
+        self.assertEqual(self.calc.subtract(5, 0), 5)
 
     def test_multiply(self):
         """Test the multiplication method."""
